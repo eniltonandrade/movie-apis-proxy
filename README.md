@@ -21,6 +21,8 @@ serve with hot reload at localhost:5000
 npm run build
 ```
 
+update .env file with API keys
+
 ## Examples
 
 http://localhost:5000/tmdb/movie/1726?language=pt-BR&append_to_response=casts
