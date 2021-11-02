@@ -22,6 +22,9 @@ const limiter = ratelimit({
 //app.set('trust proxy', 1);
 
 app.use(cors());
+app.get('/', (req: Request, res: Response) => {
+    res.json({ message: 'Welcome to Movie APIs Proxy' })
+});
 app.use('/tmdb', TMDB);
 app.use('/omdb', OMDB);
 
