@@ -21,6 +21,9 @@ const limiter = (0, express_rate_limit_1.default)({
 //app.use(limiter);
 //app.set('trust proxy', 1);
 app.use((0, cors_1.default)());
+app.get('/', (req, res) => {
+    res.json({ message: 'Welcome to Movie APIs Proxy' });
+});
 app.use('/tmdb', tmdb_1.router);
 app.use('/omdb', omdb_1.router);
 app.listen(PORT, () => console.log(`🚀 Server is running on port ${PORT} `));
