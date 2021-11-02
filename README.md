@@ -9,6 +9,17 @@ Use the package manager [npm](https://www.npmjs.com/) to install the app.
 ```bash
 npm install
 ```
+serve with hot reload at localhost:5000
+
+```bash
+npm run dev
+```
+
+serve with hot reload at localhost:5000
+
+```bash
+npm run build
+```
 
 ## Examples
 
